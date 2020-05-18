@@ -30,6 +30,12 @@
          $manager->updateGeneralUser();
      }elseif(isset($_POST['submit-search'])){
          $manager->searchVehicles();
+     }elseif(isset($_POST['submit-released-search'])){
+         $manager->searchReleased();
+     }elseif(isset($_POST['submit-admin-search'])){
+         $manager->searchAdmin();
+     }elseif(isset($_POST['submit-general-search'])){
+        $manager->searchGenUsers();
      }
 
     class manager{
@@ -135,8 +141,6 @@
             $number = $_POST['search'];
             $minlength=1;
             if(strlen($number)>=$minlength){
-                // $number=htmlspecialchars($number);
-                // $number=mysql_real_escape_string($number);
                 $utility=new utility();
                 $searched = $utility->getSearchedVehicles($number);
             }
@@ -146,6 +150,38 @@
             } else {
                 $_SESSION['searchedVehicles']=[];
                 header("Location:../search.php");
+            }
+        }
+        public function searchAdmin(){
+            $name = $_POST['search'];
+            $utility=new utility();
+            $searched = $utility->getSearchedAdmins($name);
+            if($searched){
+                $_SESSION['searchedAdmins']=$searched;
+                header("Location:../searchAdmins.php");
+            } else {
+                $_SESSION['searchedAdmins']=[];
+                header("Location:../searchAdmins.php");
+            }
+        }
+        public function searchGenUsers(){
+            $name = $_POST['search'];
+            $utility=new utility();
+            $searched = $utility->getSearchedGenUsers($name);
+        }
+        public function searchReleased(){
+            $number = $_POST['search'];
+            $minlength=1;
+            if(strlen($number)>=$minlength){
+                $utility=new utility();
+                $searched = $utility->getReleasedVehiclesSearch($number);
+            }
+            if($searched){
+                $_SESSION['searchedReleasedVehicles']=$searched;
+                header("Location:../searchReleased.php");
+            } else{
+                $_SESSION['searchedReleasedVehicles']=[];
+                header("Location:../searchReleased.php");
             }
         }
 

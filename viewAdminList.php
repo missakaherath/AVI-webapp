@@ -69,6 +69,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             font-weight: bold;
             color: #009879;
             }
+			.search-div{
+				padding: 30px 0 0 25px;
+				font-family: 'Open Sans', sans-serif;
+			}
+			.searchButton{
+				border-radius: 0 5px 5px 0;
+				color: #fff;
+				background: #009879;
+				width: 70px;
+				height: 40px;
+				text-align: center;
+				font-size: 13px;
+				border: 5px solid #00B4CC;
+				border-color: #009879;
+				cursor: pointer;
+			}
+			.searchTerm{
+				border: 3px solid #009879;
+				border-radius: 5px 0 0 5px;
+				outline: none;
+  				color: #9DBFAF;
+				/* border-right: none; */
+				padding: 7px;
+			}
+			.searchTerm:focus{
+				color: #00B4CC;
+				}
     	</style>
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -138,6 +165,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	   </script>
 	<div class="banner">		  			
 		<div class="bnr2">						  
+	</div>
+	<div>
+		<div class="search-div">
+			<form action="./PHP/manager.php" method="POST">
+				<input class="searchTerm" type="text" name="search" placeholder="Enter Name">
+				<button class="searchButton" type="submit" name="submit-admin-search">Search</button>
+			</form>
+		</div>
 	</div>
     <div>
     	<table  class="container-table">

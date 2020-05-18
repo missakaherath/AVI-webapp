@@ -134,8 +134,9 @@
 		<div class="container">
 			<div class="header-top">
 				<div class="logo">
-					<a style="color: #0b0b0b" href="index.html">A V I</a>
-				</div>
+					<a href="homePage.php">
+						<img alt="AVI" src="images/4.png" width="70px" height="70px" style="margin-top:-20px">
+					</a>				</div>
 				<div class="top-menu">
 					<span class="menu"><img src="images/nav.png" alt=""/> </span>
 						<ul>

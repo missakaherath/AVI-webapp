@@ -1,5 +1,5 @@
 <!--
-Au<!--
+Au
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -189,7 +189,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<div class="search-div">
 			<form action="./PHP/manager.php" method="POST">
-				<input class="searchTerm" type="text" name="search" placeholder="search">
+				<input class="searchTerm" type="text" name="search" placeholder="Enter Number">
 				<button class="searchButton" type="submit" name="submit-search">Search</button>
 			</form>
 		</div>
