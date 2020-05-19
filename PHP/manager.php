@@ -39,11 +39,6 @@ require_once('logger.php');
     } elseif (isset($_POST['submit-general-search'])) {
         $manager->searchGenUsers();
     }
-    // }
-    // else {
-    //     header('Location: login.php');
-    //     exit();
-    // }
 
     class manager
     {
@@ -102,7 +97,6 @@ require_once('logger.php');
             $this->myLogger = new admin($psw);
             $result = $this->myLogger->loginAdmin();
             if ($result) {
-                
                 $_SESSION['set'] = "set";
                 // session_start();
                 // $_SESSION['userLoggedIn'] = "true";

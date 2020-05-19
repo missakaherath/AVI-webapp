@@ -1,5 +1,12 @@
 <!DOCTYPE HTML>
+<?php require_once('./PHP/initialize.php'); ?>
+<?php if (!isset($_SESSION['set'])) {
+	header("Location:login.php");
+	$_SESSION['attempt']=true;
+}
+?>
 <html>
+
 
 <head>
 	<title>AVI registration home</title>
@@ -54,9 +61,9 @@
 						<li><a href="viewGeneralUserList.php">General Users</a></li>
 						<li><a href="LogOut.php">Logout</a></li>
 					</ul>
-					<?php
-						echo ($_SESSION['set']);
-					?>
+					<!-- <?php
+							echo ($_SESSION['set']);
+							?> -->
 				</div>
 				<!--script-nav-->
 				<script>

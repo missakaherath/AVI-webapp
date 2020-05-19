@@ -5,6 +5,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php require_once('./PHP/initialize.php'); ?>
+<?php if (!isset($_SESSION['set'])) {
+	header("Location:login.php");
+}
+?>
 <!DOCTYPE HTML>
 <html>
 <?php require_once('./PHP/initialize.php'); ?>
@@ -217,6 +222,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     if ($_SESSION['set']=true){
 		$blacklistedVehicleList=$_SESSION['blacklistedList'];
     	foreach ($blacklistedVehicleList as $blacklisted){
+			// print_r($_SESSION['blacklistedList']);
     		$vehicleNumber=$blacklisted['vehicle_number'];
     		$branchName=$blacklisted['branchName'];
             $blacklistedDate=$blacklisted['datetime'];
