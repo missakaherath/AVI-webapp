@@ -215,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <?php
     if ($_SESSION['set']=true){
-        $blacklistedVehicleList=$_SESSION['blacklistedList'];
+		$blacklistedVehicleList=$_SESSION['blacklistedList'];
     	foreach ($blacklistedVehicleList as $blacklisted){
     		$vehicleNumber=$blacklisted['vehicle_number'];
     		$branchName=$blacklisted['branchName'];

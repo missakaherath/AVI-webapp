@@ -217,7 +217,7 @@
             <div>
                 <table class="container-table">
                     <tr>
-                        <th>Admin</th>
+                        <th>General User</th>
                         <th>Branch</th>
                         <th>Registration No</th>
                         <th style='text-align: center;'>Status</th>
@@ -225,37 +225,36 @@
                         <th style='text-align: center;'>Remove</th>
                     </tr>
                     <?php
-                    if ($_SESSION['set'] = true) {
-                        $searchedAdmins = $_SESSION['searchedAdmins'];
-                        if (sizeof($searchedAdmins) == 0) {
-                            echo "<h4 style='margin-left : 50px'; font-color : #002d24;>No Results Were Found.</h4>";
+                    $userList = $_SESSION['searchedGenUsers'];
+                    foreach ($userList as $user) {
+                        $fullName = $user['name'];
+                        $userID = $user['userID'];
+                        $branch = $user['branchName'];
+                        $regNo = $user['regNo'];
+                        if ($user['isActive'] == 1) {
+                            $isActive = "active";
+                        } else {
+                            $isActive = "Inactive";
                         }
-                        foreach ($searchedAdmins as $searchedadmin){
-                            $fullName=$searchedadmin['name'];
-                            $adminID=$searchedadmin['adminID'];
-                            $branch=$searchedadmin['branchName'];
-                            $regNo=$searchedadmin['regNo'];
-                            if ($searchedadmin['isActive']=='1'){
-                                $isActive="Active";
-                            }else{
-                                $isActive="Inactive";
-                            }
-                            echo "<tr  style='border: 1px #3d3d29; color: #009879; font-weight: bold;'>
-                            <form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
-                                <input type='hidden' name='name' value=". $fullName . ">
-                                <input type='hidden' name='branch' value=". $branch . ">
-                                <input type='hidden' name='regNo' value=". $regNo . ">
-                                <td style='#3d3d29; padding:0.5%;'>".$fullName."</td>
-                                <td style='#3d3d29; padding:0.5%;'>".$branch."</td>
-                                <td style='padding:0.5%;'>".$regNo."</td>
-                                <td style='text-align: center;'>".$isActive."</td>
-                                <td style='text-align: center;'>" .  '<button name="edit_admin" type="submit" value="'.$adminID .'" >Edit Details</button>'.  "</td>
-                                <td style='text-align: center;'>" .  '<button name="remove_admin" type="submit" value="'.$adminID .'" >Change State</button>'.  "</td>
-                
-                                </form>
-                            </tr>";
+                        echo "<tr style='border: 1px #3d3d29; color: #009879; font-weight: bold;'>
+    		<form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
+    			<input type='hidden' name='name' value=" . $fullName . ">
+    			<input type='hidden' name='branch' value=" . $branch . ">
+    			<input type='hidden' name='regNo' value=" . $regNo . ">
+    			<td style='padding:0.5%;'>" . $fullName . "</td>
+    			<td style='padding:0.5%;'>" . $branch . "</td>
+    			<td style='padding:0.5%;'>" . $regNo . "</td>
+    			<td style='text-align: center;'>" . $isActive . "</td>
+    			<td style='text-align: center;'>" .  '<button name="edit_G_user" type="submit" value="' . $userID . '" >Edit Details</button>' .  "</td>
+    			<td style='text-align: center;'>" .  '<button name="remove_G_user" type="submit" value="' . $userID . '" >Change State</button>' .  "</td>
+
+    			</form>
+    		</tr>";
                     }
-                        echo "</table>";
-                    }
+                    echo "</table>";
                     ?>
+                </table>
             </div>
+</body>
+
+</html>

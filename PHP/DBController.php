@@ -62,7 +62,7 @@ class DBController
 		if (!$result5) {
 			die('Invalid query: ' . mysqli_error($this->conn));
 		} else {
-			return $result;
+			return $result5;
 		}
 	}
 }

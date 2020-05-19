@@ -108,7 +108,14 @@ class utility
     }
     public function getSearchedGenUsers($name)
     {
-        $query = "";
+        $query = "SELECT * FROM users INNER JOIN  branch ON users.branchID=branch.branchID WHERE username LIKE '%$name%'";
+        $result = $this->controller->runQuery($query);
+        echo $result;
+        if (false) {
+            return false;
+        } else {
+            return $result;
+        }
     }
     //get blcklisted vehicle list
     public function getBlackListedVehicleList()
