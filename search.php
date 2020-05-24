@@ -237,8 +237,8 @@
 						foreach ($searchedVehicles as $searched) {
 							$vehicleNumber = $searched['vehicle_number'];
 							$branchName = $searched['branchName'];
-							$blacklistedDate = $searched['datetime'];
-							$blacklistedID = $searched['bID'];
+							$blacklistedDate = $searched['datetim'];
+							$blacklistedID = $searched['vehicleID'];
 							if ($searched['isBlacklisted'] == '1') {
 								$isBlacklisted = "Blacklisted";
 							} else {

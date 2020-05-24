@@ -139,6 +139,8 @@ require_once('logger.php');
             $releasedList = $utility->getReleasedVehicleList();
             if ($releasedList) {
                 $_SESSION['releasedList'] = $releasedList;
+            } else {
+                $_SESSION['releasedList'] = "";
             }
         }
 
@@ -235,7 +237,8 @@ require_once('logger.php');
             $isRemoved = $utility->removeBlocked($_POST['remove_blacklisted']);
             if ($isRemoved) {
                 $this->getBlacklistedVehicleList();
-                header("Location:../viewBlockedVehicles.php");
+                $this->getReleasedVehicles();
+                header("Location:../viewReleasedVehicles.php");
             }
         }
 

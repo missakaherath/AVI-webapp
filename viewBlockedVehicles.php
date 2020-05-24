@@ -224,9 +224,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	foreach ($blacklistedVehicleList as $blacklisted){
 			// print_r($_SESSION['blacklistedList']);
     		$vehicleNumber=$blacklisted['vehicle_number'];
-    		$branchName=$blacklisted['branchName'];
-            $blacklistedDate=$blacklisted['datetime'];
-			$blacklistedID=$blacklisted['bID'];
+			$branchName=$blacklisted['branchName'];
+			
+			$blacklistedDateTime=$blacklisted['datetim'];
+			$datetime = new DateTime($blacklistedDateTime);
+			$date = $datetime->format('Y-m-d');
+
+			$time = $datetime->format('H:i');
+
+			$blacklistedID=$blacklisted['vehicleID'];
 			//echo $blacklistedID , " numbers " , $vehicleNumber , "eeeee";
     		if ($blacklisted['isBlacklisted']=='1'){
     			$isBlacklisted="Blacklisted";
@@ -237,10 +243,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		<form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
     			<input type='hidden' name='number' value=". $vehicleNumber . ">
     			<input type='hidden' name='branch' value=". $branchName . ">
-    			<input type='hidden' name='date' value=". $blacklistedDate . ">
+    			<input type='hidden' name='date' value=". $date . ">
     			<td style='padding:0.5%;'>".$vehicleNumber."</td>
     			<td style='padding:0.5%;'>".$branchName."</td>
-                <td style='padding:0.5%;'>".$blacklistedDate."</td>
+                <td style='padding:0.5%;'>".$date."</td>
                 <td style='text-align: left;'>".$isBlacklisted."</td>
     			<td style='text-align: center;'>" .  '<button name="remove_blacklisted" type="submit" value="'.$blacklistedID .'" >Unblock</button>'.  "</td>
     			</form>

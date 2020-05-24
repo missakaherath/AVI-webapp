@@ -41,8 +41,10 @@
 					<span class="menu"><img src="images/nav.png" alt=""/> </span>
 						<ul>
 							<li><a href="homePage.php">home</a></li>
+							<li><a href="viewBlockedVehicles.php">Blacklisted Vehicles</a></li>
+                            <li><a href="viewReleasedVehicles.php">Released Vehicles</a></li>
                             <li><a href="viewAdminList.php">Admin List</a></li>
-                            <li><a href="viewGeneralUserList.php">General Users</a></li>
+                            <li><a href="viewGeneralUserList.php" class="active">General Users</a></li>
                             <li><a href="LogOut.php">Logout</a></li>
                         </ul>
 				</div>

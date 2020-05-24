@@ -5,14 +5,15 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE HTML>
-
-<html>
 <?php require_once('./PHP/initialize.php'); ?>
 <?php if (!isset($_SESSION['set'])) {
 	header("Location:login.php");
 }
 ?>
+<!DOCTYPE HTML>
+ 
+<html>
+
 <head>
 	<title>Blocked Vehicles List</title>
 
@@ -215,7 +216,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</tr>
 
 					<?php
-					if ($_SESSION['set'] = true) {
+					if ($_SESSION['set'] = true AND $_SESSION['releasedList']) {
 						$releasedList = $_SESSION['releasedList'];
 						foreach ($releasedList as $releasedVehicle) {
 							$vehicleNumber = $releasedVehicle['vehicle_number'];
@@ -241,10 +242,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		</tr>";
 						}
 						echo "</table>";
+					} else {
+						echo "<p>There are no released vehicles in the list... </p>";
 					}
 					?>
 				</table>
 			</div>
+			<!--footer-->
+			<div class="footer-section" style="margin-top: 100px">
+						<div class="container">
+							<div class="footer-top">
+								<p>Copyright &copy; 2015 <span>A V I</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+							</div>
+							<script type="text/javascript">
+								$(document).ready(function() {
+									/*
+									var defaults = {
+										containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear'
+									};
+									*/
+
+									$().UItoTop({ easingType: 'easeOutQuart' });
+
+								});
+							</script>
+							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+						</div>
+					</div>
 
 </body>
 
