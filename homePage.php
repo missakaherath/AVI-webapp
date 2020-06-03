@@ -93,8 +93,8 @@
 
 					<div class="slid banner1">
 						<div class="caption">
-							<h3 style="color: white; text-shadow: 0 0 3px #009879, 0 0 5px #009879; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
-							<p style="color: white; text-shadow: -1px 0 #009879, 0 1px #009879, 1px 0 #009879, 0 -1px #009879; ">This application is used to register admins and users to the AVI system</p>
+							<h3 style="color: white; text-shadow: 0 0 3px #114720, 0 0 5px #114720; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
+							<p style="color: white; text-shadow: -1px 0 #114720, 0 1px #114720, 1px 0 #114720, 0 -1px #114720; ">This application is used to register admins and users to the AVI system</p>
 							<input onclick="window.location='addAdmin.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px" value="Register Admin">
 							<input onclick="window.location='addGeneralUser.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px ; margin: 20px;" value="Register General User">
 						</div>
@@ -103,8 +103,8 @@
 
 					<div class="slid banner2">
 						<div class="caption">
-							<h3 style="color: white; text-shadow: 0 0 3px #009879, 0 0 5px #009879; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
-							<p style="color: white; text-shadow: -1px 0 #009879, 0 1px #009879, 1px 0 #009879, 0 -1px #009879; ">This application is used to register admins and users to the AVI system</p>
+							<h3 style="color: white; text-shadow: 0 0 3px #114720, 0 0 5px #114720; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
+							<p style="color: white; text-shadow: -1px 0 #114720, 0 1px #114720, 1px 0 #114720, 0 -1px #114720; ">This application is used to register admins and users to the AVI system</p>
 							<input onclick="window.location='addAdmin.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px" value="Register Admin">
 							<input onclick="window.location='addGeneralUser.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px ; margin: 20px;" value="Register General User">
 						</div>
@@ -113,8 +113,8 @@
 
 					<div class="slid banner3">
 						<div class="caption">
-							<h3 style="color: white; text-shadow: 0 0 3px #009879, 0 0 5px #009879; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
-							<p style="color: white; text-shadow: -1px 0 #009879, 0 1px #009879, 1px 0 #009879, 0 -1px #009879; ">This application is used to register admins and users to the AVI system</p>
+							<h3 style="color: white; text-shadow: 0 0 3px #114720, 0 0 5px #114720; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
+							<p style="color: white; text-shadow: -1px 0 #114720, 0 1px #114720, 1px 0 #114720, 0 -1px #114720; ">This application is used to register admins and users to the AVI system</p>
 							<input onclick="window.location='addAdmin.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px" value="Register Admin">
 							<input onclick="window.location='addGeneralUser.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px ; margin: 20px;" value="Register General User">
 						</div>

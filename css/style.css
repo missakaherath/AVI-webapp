@@ -96,7 +96,7 @@ body {
 }
 
 .top-menu ul li a:hover {
-    color: #05a581;
+    color: #114720;
 }
 
 span.menu {
@@ -110,13 +110,13 @@ span.menu {
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
-    text-shadow: 0 0 2px #009879, 0 0 2px #009879;
+    text-shadow: 0 0 2px #114720, 0 0 2px #114720;
     /* font-color: white; */
     /* font-weight: 400px; */
 }
 
 .top-menu ul li a.active {
-    color: #05a581;
+    color: #114720;
 }
 
 .search {
@@ -164,7 +164,7 @@ span.menu {
 
 .banner1 input {
     border-radius: 0 5px 5px 0;
-    color: #009879;
+    color: #114720;
     background: #fff;
     /* width: 70px;
 				height: 40px; */
@@ -183,7 +183,7 @@ span.menu {
 
 .banner2 input {
     border-radius: 5px 5px 5px 5px;
-    color: #009879;
+    color: #114720;
     background: #fff;
     /* width: 70px;
 	height: 40px; */
@@ -202,7 +202,7 @@ span.menu {
 
 .banner3 input {
     border-radius: 5px 5px 5px 5px;
-    color: #009879;
+    color: #114720;
     background: #fff;
     /* width: 70px;
 	height: 40px; */
@@ -495,7 +495,7 @@ a.button:hover {
 .footer-section {
     padding: 2em 0;
     text-align: center;
-    background: #009879;
+    background: #114720;
 }
 
 .footer-top p {
@@ -961,7 +961,7 @@ h3.m_1 {
     font-weight: bold;
     margin: 0.5em 0 0 0;
     -webkit-appearance: none;
-    background: #009879;
+    background: #114720;
 }
 
 .contact-form input[type="submit"]:hover {
@@ -1014,7 +1014,7 @@ h3.m_1 {
     font-weight: bold;
     margin: 0.5em 0 0 0;
     -webkit-appearance: none;
-    background: #009879;
+    background: #114720;
 }
 
 .login-form input[type="submit"]:hover {

@@ -80,7 +80,7 @@
 	 <div class="content">
 	<div class="mail">
 		<div class="container">
-			<h3 style="margin: 0 15px 25px -690px; color: #009879; font-family: sans-serif;">Update User Details</h3>
+			<h3 style="margin: 0 15px 25px -690px; color: #114720; font-family: sans-serif;">Update User Details</h3>
 		</div>
 		<?php
 		    require_once('./PHP/initialize.php');

@@ -58,7 +58,7 @@
         .container-table th {
             padding: 10px;
             /* text-align: center; */
-            background-color: #009879;
+            background-color: #114720;
             color: #ffffff;
             text-align: left;
             font-weight: bold;
@@ -79,12 +79,12 @@
         }
 
         .container-table tr:last-of-type {
-            border-bottom: 2px solid #009879;
+            border-bottom: 2px solid #114720;
         }
 
         .container-table tr {
             font-weight: bold;
-            color: #009879;
+            color: #114720;
         }
 
 
@@ -171,7 +171,7 @@
 </head>
 
 <body>
-    <div style="background-color: #e5f4f1" class="header">
+    <div style="background-color: #DEDAC8" class="header">
         <div class="container">
             <div class="header-top">
                 <div class="logo">
@@ -217,7 +217,7 @@
 
             <div class="bnr2">
             </div>
-            <h1 style="margin: 25px 15px 25px 35px; color: #009879; font-family: sans-serif;">Search Results</h1>
+            <h1 style="margin: 25px 15px 25px 35px; color: #114720; font-family: sans-serif;">Search Results</h1>
             <div>
                 <table class="container-table">
                     <tr>
@@ -244,7 +244,7 @@
                             }else{
                                 $isActive="Inactive";
                             }
-                            echo "<tr  style='border: 1px #3d3d29; color: #009879; font-weight: bold;'>
+                            echo "<tr  style='border: 1px #3d3d29; color: #114720; font-weight: bold;'>
                             <form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
                                 <input type='hidden' name='name' value=". $fullName . ">
                                 <input type='hidden' name='branch' value=". $branch . ">

@@ -43,7 +43,7 @@
 
 		.home1 {
 			height: 500px;
-			background-color: #009879;
+			background-color: #114720;
 			position: relative;
 		}
 
@@ -104,10 +104,10 @@
 
 		.loginButton {
 			color: #fff;
-			background: #009879;
+			background: #114720;
 			text-align: center;
 			border: 5px solid #00B4CC;
-			border-color: #009879;
+			border-color: #114720;
 			border-radius: 5px 5px 5px 5px;
 		}
 

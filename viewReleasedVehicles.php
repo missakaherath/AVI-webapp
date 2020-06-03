@@ -61,7 +61,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		.container-table th {
 			padding: 10px;
 			/* text-align: center; */
-			background-color: #009879;
+			background-color: #114720;
 			color: #ffffff;
 			text-align: left;
 			font-weight: bold;
@@ -82,12 +82,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 
 		.container-table tr:last-of-type {
-			border-bottom: 2px solid #009879;
+			border-bottom: 2px solid #114720;
 		}
 
 		.container-table tr {
 			font-weight: bold;
-			color: #009879;
+			color: #114720;
 		}
 
 		.search-div {
@@ -98,18 +98,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		.searchButton {
 			border-radius: 0 5px 5px 0;
 			color: #fff;
-			background: #009879;
+			background: #114720;
 			width: 70px;
 			height: 40px;
 			text-align: center;
 			font-size: 13px;
 			border: 5px solid #00B4CC;
-			border-color: #009879;
+			border-color: #114720;
 			cursor: pointer;
 		}
 
 		.searchTerm {
-			border: 3px solid #009879;
+			border: 3px solid #114720;
 			border-radius: 5px 0 0 5px;
 			outline: none;
 			color: #9DBFAF;
@@ -153,8 +153,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!---End-smoth-scrolling---->
 </head>
 
-<body>
-	<div style="background-color: #e5f4f1" class="header">
+<body> 
+	<div style="background-color: #DEDAC8" class="header">
 		<div class="container">
 			<div class="header-top">
 				<div class="logo">
@@ -230,7 +230,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							$blacklistedID = $releasedVehicle['bID'];
 
-							echo "<tr  style='border: 1px #3d3d29; color: #009879; font-weight: bold;'>
+							echo "<tr  style='border: 1px #3d3d29; color: #114720; font-weight: bold;'>
     		<form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
     			<input type='hidden' name='number' value=" . $vehicleNumber . ">
     			<input type='hidden' name='branch' value=" . $date . ">

@@ -5,6 +5,7 @@
 	header("Location:login.php");
 }
 ?>
+
 <head>
 	<title>About</title>
 
@@ -48,7 +49,7 @@
 		.container-table th {
 			padding: 10px;
 			/* text-align: center; */
-			background-color: #009879;
+			background-color: #114720;
 			color: #ffffff;
 			text-align: left;
 			font-weight: bold;
@@ -69,32 +70,34 @@
 		}
 
 		.container-table tr:last-of-type {
-			border-bottom: 2px solid #009879;
+			border-bottom: 2px solid #114720;
 		}
 
 		.container-table tr {
 			font-weight: bold;
-			color: #009879;
+			color: #114720;
 		}
+
 		.search-div {
 			padding: 30px 0 0 25px;
 			font-family: 'Open Sans', sans-serif;
 		}
+
 		.searchButton {
 			border-radius: 0 5px 5px 0;
 			color: #fff;
-			background: #009879;
+			background: #114720;
 			width: 70px;
 			height: 40px;
 			text-align: center;
 			font-size: 13px;
 			border: 5px solid #00B4CC;
-			border-color: #009879;
+			border-color: #114720;
 			cursor: pointer;
 		}
 
 		.searchTerm {
-			border: 3px solid #009879;
+			border: 3px solid #114720;
 			border-radius: 5px 0 0 5px;
 			outline: none;
 			color: #9DBFAF;
@@ -139,7 +142,7 @@
 </head>
 
 <body>
-	<div style="background-color: #e5f4f1" class="header">
+	<div style="background-color: #DEDAC8" class="header">
 		<div class="container">
 			<div class="header-top">
 				<div class="logo">
@@ -215,7 +218,7 @@
 						} else {
 							$isActive = "Inactive";
 						}
-						echo "<tr style='border: 1px #3d3d29; color: #009879; font-weight: bold;'>
+						echo "<tr style='border: 1px #3d3d29; color: #114720; font-weight: bold;'>
     		<form class=\"box\" action=\"./PHP/manager.php\" method=\"post\">
     			<input type='hidden' name='name' value=" . $fullName . ">
     			<input type='hidden' name='branch' value=" . $branch . ">
@@ -234,7 +237,32 @@
 					?>
 				</table>
 			</div>
+			<!--footer-->
+			<div class="footer-section" style="margin-top: 100px">
+				<div class="container">
+					<div class="footer-top">
+						<p>Copyright &copy; 2015 <span>A V I</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+								containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear'
+							};
+							*/
 
+							$().UItoTop({
+								easingType: 'easeOutQuart'
+							});
+
+						});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
 </body>
 
 </html>

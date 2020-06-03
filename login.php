@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<title>AVI registration</title>
 	<style>
@@ -44,13 +45,13 @@
 </head>
 
 <body>
-	<div class="header">
+	<div  class="header">
 		<div class="container">
 			<div class="header-top">
 				<div class="logo">
-				<a href="index.php">
-				<img alt="AVI" src="images/logo.png" width="70px" height="70px" style="margin-top:30px">
-				</a>
+					<a href="index.php">
+						<img alt="AVI" src="images/logo.png" width="70px" height="70px" style="margin-top:30px">
+					</a>
 					<!-- <a style="color: #0b0b0b" href="index.php">A V I</a> -->
 				</div>
 				<!-- <div class="top-menu">
@@ -58,8 +59,8 @@
 					<ul>
 						<li><a style="color: #0b0b0b" href="index.php">home</a></li>
 						<li><a style="color: #0b0b0b" href="about.php">about</a></li> -->
-						<!-- <li><a style="color: #0b0b0b" href="index.php">logout</a></li> -->
-					<!-- </ul>
+				<!-- <li><a style="color: #0b0b0b" href="index.php">logout</a></li> -->
+				<!-- </ul>
 				</div> -->
 				<!--script-nav-->
 				<script>
@@ -103,13 +104,13 @@
 			<div class="col-xs-6">
 				<img src="images/login.png" alt="login image" style="width:500px;height:350px;">
 				<p>fok</p> -->
-			</div>
-
-		</div> 
 	</div>
-	<div  class="row" style="margin-bottom:150px;">
+
+	</div> 
+	</div>
+	<div class="row" style="margin-bottom:150px; ">
 		<div class="col-xs-6">
-			<div style="margin-top:120px; margin-left:80px;">
+			<div style="margin-top:120px; margin-left:80px; ">
 				<div class="container login">
 					<img src="images/avatar.png" alt="AVATAR" style="width:225px;height:200px; margin-left : 80px; margin-bottom : 20px;">
 				</div>
@@ -123,11 +124,11 @@
 				</div>
 			</div>
 		</div>
-		<!-- <?php 
-			if($_SESSION['pwd']==false){
-				echo "<p>Invalid Password</p>";
-			}
-		?>  -->
+		<!-- <?php
+				if ($_SESSION['pwd'] == false) {
+					echo "<p>Invalid Password</p>";
+				}
+				?>  -->
 		<div class="col-xs-6">
 			<img src="images/login.png" alt="login image" style="width:500px;height:350px; margin-top : 200px">
 
