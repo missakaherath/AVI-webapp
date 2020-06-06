@@ -28,7 +28,7 @@
 	<!---End-smoth-scrolling---->
 </head>
 <body>
-<div class="header">
+<div class="header" style="background-color: #DEDAC8;">
 	<div class="container">
 		<div class="header-top">
 			<div class="logo">
@@ -40,11 +40,11 @@
 			<div class="top-menu">
 				<span class="menu"><img src="images/nav.png" alt=""/> </span>
 				<ul>
-					<li><a href="index.php">home</a></li>
+					<li><a href="homePage.php">home</a></li>
 					<li><a href="viewBlockedVehicles.php">Blacklisted Vehicles</a></li>
-					<li><a href="about.php">about</a></li>
-					<li><a href="addAdmin.php" >Add New Admin</a></li>
-					<li><a class="active" href="addGeneralUser.php">Add General User</a></li>
+					<li><a href="viewAdminList.php">View Admin List</a></li>
+					<li><a href="viewGeneralUserList.php">View General Users</a></li>
+					<li><a href="LogOut.php">Logout</a></li>
 				</ul>
 			</div>
 			<!--script-nav-->
@@ -76,11 +76,11 @@
 		</div>
 	</div>
 </div>
-<div class="content">
-	<div class="mail">
+<div class="content row" style="background-color: #DEDAC8;">
+	<div class="mail col-xs-6" style="background-color: #DEDAC8;">
 		<!-- container -->
 		<div class="container">
-			<h3 style="font-family: sans-serif; text-align:left; padding-left:30px; padding-bottom:20px; color:#114720">Add a General User</h3>
+			<h3 style= "margin-left:1.7em; font-family: sans-serif; text-align:left; padding-left:30px; padding-bottom:20px; color:#114720">Add a General User</h3>
 		</div>
 		<div class="col-md-6 contact-form">
 				<form action="./PHP/manager.php" method="post">
@@ -89,7 +89,7 @@
 				<div class="styled-select">
 				<label style="align-content: left; font-size:20px; color : #114720">Select Branch</label>
 
-				<select name="branch" id="categorylist" required style="margin-left: 20px">
+				<select name="branch" id="categorylist" required style="margin-bottom: 13px; border-color : #114720">
                 						<option name='matara' value="1">Matara</option>
                 						<option name='galle'value="2">Galle</option>
                 						<option name='hambantota'value="3">Hambantota</option>
@@ -102,6 +102,9 @@
 			</form>
 		</div>
 		<div class="clearfix"> </div>
+	</div>
+	<div class="col-xs-6" style="background-color: #DEDAC8; margin-top: 20px">
+		<img src="images/generaluser.png" alt="" width="500px" height="400px">
 	</div>
 </div>
 <!-- //container -->

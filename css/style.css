@@ -864,7 +864,8 @@ h3.m_1 {
 /*contacts*/
 
 .mail {
-    padding: 4em 0;
+    padding: 0 0 8em 4em;
+    background-color: #DEDAC8;
 }
 
 .mail h3 {
@@ -926,16 +927,16 @@ h3.m_1 {
 }
 
 .contact-form input[type="text"] {
-    width: 50%;
+    width: 80%;
     /* align: left; */
-    color: #7fcbbc;
+    /* color: #7fcbbc; */
     background: none;
     outline: none;
     font-size: 1em;
     padding: .5em;
     margin-bottom: 1em;
     margin-top: 10px;
-    border: solid 1px #66c1ae;
+    border: solid 1px #114720;
     -webkit-appearance: none;
 }
 

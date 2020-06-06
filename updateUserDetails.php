@@ -28,7 +28,7 @@
 <!---End-smoth-scrolling---->
 </head>
 <body>
-	<div class="header">
+	<div class="header" style="background-color: #DEDAC8;">
 		<div class="container">
 			<div class="header-top">
 				<div class="logo">
@@ -80,7 +80,7 @@
 	 <div class="content">
 	<div class="mail">
 		<div class="container">
-			<h3 style="margin: 0 15px 25px -690px; color: #114720; font-family: sans-serif;">Update User Details</h3>
+			<h3 style="margin: 0 15px 25px -625px; color: #114720; font-family: sans-serif;">Update User Details</h3>
 		</div>
 		<?php
 		    require_once('./PHP/initialize.php');
@@ -104,7 +104,7 @@
 					<div class="styled-select">
 						<label style="align-content: left; font-size:20px; color : #114720">Select Branch</label>
 
-						<select name="branchID" id="categorylist" required style="margin-left: 20px" >
+						<select name="branchID" id="categorylist" required style="margin-left: 20px; border-color : #114720" >
 							<option name='matara' value="1">Matara</option>
 							<option name='galle'value="2">Galle</option>
 							<option name='hambantota'value="3">Hambantota</option>

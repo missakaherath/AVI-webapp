@@ -114,7 +114,7 @@
 		.home2 img {
 			margin: 0;
 			position: absolute;
-			top: 5%;
+			top: 12%;
 			left: 27%;
 			height: 300px;
 			width: 300px
