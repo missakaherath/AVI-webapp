@@ -98,9 +98,21 @@
 				<form action="./PHP/manager.php" method="post">
 					<input type="text" name="fullName" placeholder="Full Name" value=<?php echo $fullName; ?> required="">
 					<input type="text" name="id" value=<?php echo $id; ?> hidden>
-                    <input type="text" name="branchID" value=<?php echo $branchID; ?> hidden>
+                    <!-- <input type="text" name="branchID" value=<?php echo $branchID; ?> hidden> -->
 					<input type="text" name="regNo" placeholder="Registration No" value=<?php echo $regNo; ?> required="">
-                    <input type="text" name="branch" placeholder="Username" value=<?php echo $branch; ?> required="">
+
+					<div class="styled-select">
+						<label style="align-content: left; font-size:20px; color : #114720">Select Branch</label>
+
+						<select name="branchID" id="categorylist" required style="margin-left: 20px" >
+							<option name='matara' value="1">Matara</option>
+							<option name='galle'value="2">Galle</option>
+							<option name='hambantota'value="3">Hambantota</option>
+							<option name='moratuwa'value="4">Moratuwa</option>
+						</select><br>
+					</div>
+
+                    <!-- <input type="text" name="branch" placeholder="Username" value=<?php echo $branch; ?> required=""> -->
                     <input type="text" name="username" placeholder="Username" value=<?php echo $username; ?> required=""><br>
 					<input type="submit" name='update_G_user' value="Update">
 				</form>

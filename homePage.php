@@ -55,11 +55,11 @@
 					<span class="menu"><img src="images/nav.png" alt="" /> </span>
 					<ul>
 						<li><a href="homePage.php" class="active">Home</a></li>
-						<li><a href="viewBlockedVehicles.php">Blacklisted Vehicles</a></li>
-						<li><a href="viewReleasedVehicles.php">Released Vehicles</a></li>
-						<li><a href="viewAdminList.php">Admin List</a></li>
-						<li><a href="viewGeneralUserList.php">General Users</a></li>
-						<li><a href="LogOut.php">Logout</a></li>
+						<li><a href="viewBlockedVehicles.php" id="viewBlockedLink" >Blacklisted Vehicles</a></li>
+						<li><a href="viewReleasedVehicles.php" id="viewReleasedLink">Released Vehicles</a></li>
+						<li><a href="viewAdminList.php" id="viewAdminLink">Admin List</a></li>
+						<li><a href="viewGeneralUserList.php" id="viewGeneralUsersLink">General Users</a></li>
+						<li><a href="LogOut.php" id="logoutLink">Logout</a></li>
 					</ul>
 					<!-- <?php
 							echo ($_SESSION['set']);
@@ -95,8 +95,8 @@
 						<div class="caption">
 							<h3 style="color: white; text-shadow: 0 0 3px #114720, 0 0 5px #114720; font-family: Gadget;">AVI USER REGISTRATION SYSTEM</h3>
 							<p style="color: white; text-shadow: -1px 0 #114720, 0 1px #114720, 1px 0 #114720, 0 -1px #114720; ">This application is used to register admins and users to the AVI system</p>
-							<input onclick="window.location='addAdmin.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px" value="Register Admin">
-							<input onclick="window.location='addGeneralUser.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px ; margin: 20px;" value="Register General User">
+							<input onclick="window.location='addAdmin.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px" id="registerAdmin" value="Register Admin">
+							<input onclick="window.location='addGeneralUser.php'" ; type="submit" style="padding-left: 30px; padding-right: 30px ; margin: 20px;" id="registerGenUser" value="Register General User">
 						</div>
 					</div>
 

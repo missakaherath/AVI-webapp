@@ -264,10 +264,10 @@ require_once('logger.php');
 
         public function updateAdmin()
         {
-            echo "sasa";
+            // echo "sasa";
             $name = $_POST['fullName'];
             $regNo = $_POST['regNo'];
-            $branch = $_POST['branch'];
+            // $branch = $_POST['branch'];
             $branchID = $_POST['branchID'];
             $username = $_POST['username'];
             $id = $_POST['id'];
@@ -283,7 +283,7 @@ require_once('logger.php');
         {
             $name = $_POST['fullName'];
             $regNo = $_POST['regNo'];
-            $branch = $_POST['branch'];
+            // $branch = $_POST['branch'];
             $branchID = $_POST['branchID'];
             $username = $_POST['username'];
             $id = $_POST['id'];

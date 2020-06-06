@@ -7,7 +7,7 @@
 ?>
 
 <head>
-	<title>About</title>
+	<title>General Users</title>
 
 	<style>
 		table {
@@ -190,7 +190,7 @@
 			<div>
 				<div class="search-div">
 					<form action="./PHP/manager.php" method="POST">
-						<input class="searchTerm" type="text" name="search" placeholder="Enter Name">
+						<input class="searchTerm" type="text" name="search" placeholder="Enter Name" required="">
 						<button class="searchButton" type="submit" name="submit-general-search">Search</button>
 					</form>
 				</div>
@@ -227,8 +227,8 @@
     			<td style='padding:0.5%;'>" . $branch . "</td>
     			<td style='padding:0.5%;'>" . $regNo . "</td>
     			<td style='text-align: center;'>" . $isActive . "</td>
-    			<td style='text-align: center;'>" .  '<button name="edit_G_user" type="submit" value="' . $userID . '" >Edit Details</button>' .  "</td>
-    			<td style='text-align: center;'>" .  '<button name="remove_G_user" type="submit" value="' . $userID . '" >Change State</button>' .  "</td>
+    			<td id='EDregNo:$regNo'; style='text-align: center;'>" .  '<button name="edit_G_user" type="submit" value="' . $userID . '" >Edit Details</button>' .  "</td>
+    			<td id='CSregNo:$regNo'; style='text-align: center;'>" .  '<button name="remove_G_user" type="submit" value="' . $userID . '" >Change State</button>' .  "</td>
 
     			</form>
     		</tr>";

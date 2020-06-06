@@ -194,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<div class="search-div">
 			<form action="./PHP/manager.php" method="POST">
-				<input class="searchTerm" type="text" name="search" placeholder="Enter Number">
+				<input class="searchTerm" type="text" name="search" placeholder="Enter Number" required="">
 				<button class="searchButton" type="submit" name="submit-search">Search</button>
 			</form>
 		</div>
@@ -248,7 +248,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     			<td style='padding:0.5%;'>".$branchName."</td>
                 <td style='padding:0.5%;'>".$date."</td>
                 <td style='text-align: left;'>".$isBlacklisted."</td>
-    			<td style='text-align: center;'>" .  '<button name="remove_blacklisted" type="submit" value="'.$blacklistedID .'" >Unblock</button>'.  "</td>
+    			<td style='text-align: center;'>" .  '<button name="remove_blacklisted" type="submit" value="'.$blacklistedID .'" id="'.$blacklistedID .'">Unblock</button>'.  "</td>
     			</form>
     		</tr>";
     }

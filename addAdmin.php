@@ -6,7 +6,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>AVI registration</title>
+	<title>Add Admin</title>
 	<style>
 		.text-head{
 
@@ -92,7 +92,7 @@
 					<input type="text" name="regNo" placeholder="Registration No" required=""><br>
 					
 					<div class="styled-select">
-					<label style="align-content: left; font-size:20px; color : #114720">Select Branch</label>
+						<label style="align-content: left; font-size:20px; color : #114720">Select Branch</label>
 
 						<select name="branch" id="categorylist" required style="margin-left: 20px" >
 							<option name='matara' value="1">Matara</option>
