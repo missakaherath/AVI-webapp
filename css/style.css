@@ -150,7 +150,7 @@ span.menu {
     outline: none;
     top: 0px;
     right: 0px;
-    background-color: #05a581;
+    background-color: #114720;
 }
 
 
@@ -285,7 +285,7 @@ span.menu {
 }
 
 .callbacks_here a:after {
-    background: #05a581;
+    background: #114720;
 }
 
 .callbacks_tabs a {
@@ -308,7 +308,7 @@ a.button {
     padding: 0.5em 1em;
     color: #fff;
     text-decoration: none;
-    background: #05a581;
+    background: #114720;
     text-transform: capitalize;
 }
 
@@ -489,7 +489,7 @@ a.button:hover {
 }
 
 .specials1 ul li a:hover {
-    color: #05a581;
+    color: #114720;
 }
 
 .footer-section {
@@ -534,7 +534,7 @@ a.button:hover {
 
 .bnr2 {
     background: url(../images/bnr3.jpg) no-repeat 0px 0px;
-    /* background-color: #05a581; */
+    /* background-color: #114720; */
     background-size: cover;
     height: 170px;
 }
@@ -649,7 +649,7 @@ a.button:hover {
 }
 
 .ser1 {
-    background: #05a581;
+    background: #114720;
     padding: 2em;
 }
 
@@ -966,7 +966,7 @@ h3.m_1 {
 }
 
 .contact-form input[type="submit"]:hover {
-    background: #05a581;
+    background: #114720;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1019,7 +1019,7 @@ h3.m_1 {
 }
 
 .login-form input[type="submit"]:hover {
-    background: #05a581;
+    background: #114720;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1498,7 +1498,7 @@ h3.m_1 {
         margin: 0 19px;
     }
     .ser1 {
-        background: #05a581;
+        background: #114720;
         padding: 1em;
     }
     .professional-grid {

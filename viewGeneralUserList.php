@@ -147,7 +147,7 @@
 			<div class="header-top">
 				<div class="logo">
 					<a href="homePage.php">
-						<img alt="AVI" src="images/4.png" width="70px" height="70px" style="margin-top:-20px">
+						<img alt="AVI" src="images/logo.png" width="100px" height="100px" style="margin-top:-20px">
 					</a>
 					<!-- <a style="color: #0b0b0b" href="index.html">A V I</a> -->
 				</div>

@@ -47,7 +47,7 @@
 			<div class="header-top">
 				<div class="logo">
 					<a href="index.php">
-						<img alt="W3Schools" src="images/4.png" width="70px" height="70px" style="margin-top:0px">
+						<img alt="W3Schools" src="images/logo.png" width="100px" height="100px" style="margin-top:0px">
 					</a>
 					<!-- <a style="color: #0b0b0b" href="index.html">A V I</a> -->
 				</div>
