@@ -47,13 +47,18 @@ class utility
     }
 
     //////////////////////////////////////////////////////
-    public function checkAdminPsw($password)
+    public function checkAdminPsw($password, $username)
     {
-        if ($password == 'admin123') {
-            return true;
-        } else {
-            return false;
-        }
+        $query = "SELECT * FROM admin WHERE username='$username';" ;
+        $result = $this->controller->runQuery($query);
+        // $count = mysqli_num_rows($result);
+        if($result){
+            if ($password == 'admin123') {
+                return true;
+            } else {
+                return false;
+            }
+        } 
     }
 
     //////////////////////////////////////////////////////

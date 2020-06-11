@@ -201,7 +201,7 @@
 				<div class="col-xs-6 home1">
 
 					<h3>AVI USER REGISTRATION SYSTEM</h3>
-					<p>AVI is a system that is developed to detect the license number of a vehicle by using an image of the vehicle and block them if the driver break any rule. This web application is used to register admins and users to the AVI system and to check the details of blocked vehicles.</p>
+					<p>AVI is a system that is developed to detect the license number of a vehicle by using an image of the vehicle and block them if the driver break any rule. This web application is used to register admins and users to the AVI system and to check and edit the details of blocked vehicles.</p>
 					<!-- <input onclick="window.location='login.php'"; type="submit" style="padding-left: 30px; padding-right: 30px" value="LOGIN"> -->
 
 				</div>
@@ -216,7 +216,7 @@
 	<div class="row">
 		<div class="row full-row">
 			<div class="col-xs-6 home2">
-				<img style="margin-top : 40px; height:350px; width:475px; margin-left:-50px;" src="images/mobileapp.png" alt="A V I">
+				<img style="margin-top : 10px; height:350px; width:475px; margin-left:-70px;" src="images/mobileapp.png" alt="A V I">
 				<!-- <input class="loginButton" onclick="window.location='login.php'"; type="submit" style="padding-left: 30px; padding-right: 30px" value="LOGIN"> -->
 			</div>
 			<div class="col-xs-6 home1">

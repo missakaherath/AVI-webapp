@@ -94,7 +94,8 @@ require_once('logger.php');
         public function loginAdmin()
         {
             $psw = $_POST['password'];
-            $this->myLogger = new admin($psw);
+            $uname = $_POST['username'];
+            $this->myLogger = new admin($psw, $uname);
             $result = $this->myLogger->loginAdmin();
             if ($result) {
                 $_SESSION['set'] = "set";
